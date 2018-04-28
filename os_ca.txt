@@ -1,4 +1,5 @@
 //Operating system Schedular code.
+
 #include<stdio.h> 
 #include<conio.h>
 
@@ -120,6 +121,7 @@ void rr(int no,int remt[10],int Cur_t,int arT[10], int bsT[10]){
         }
         total+=w_time[i];
     }
+
  
     avg_wait=(float)total/n;
     total=0;
@@ -130,6 +132,7 @@ void rr(int no,int remt[10],int Cur_t,int arT[10], int bsT[10]){
         total=total + tut_t[i];
         printf("\nP%d\t\t\t%d\t\t\t%d\t\t\t%d",Proc_no[i],btime[i],w_time[i],tut_t[i]);
     }
+
     avg_tut=(float)total/n;
     printf("\n\nAverage waiting time = %f",avg_wait);
     printf("\n Average turnaround time = %f\n",avg_tut);
