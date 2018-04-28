@@ -6,7 +6,8 @@ void rr(int no,int remt[10],int Cur_t,int arT[10], int bsT[10]);
 
 main() 
 {
-	int Proc_no,j,no,CurT,RemProc,indicator,time_quan,wait,tut,arT[10],bsT[10],remt[10],x=1;
+	
+        int Proc_no,j,no,CurT,RemProc,indicator,time_quan,wait,tut,arT[10],bsT[10],remt[10],x=1;
 	indicator = 0;
 	wait = 0;
 	tut = 0;
@@ -14,6 +15,7 @@ main()
 	scanf("%d",&no);
 	RemProc = no;
 	
+
 	printf("\nEnter the arrival time and burst time of the processes\n");
 	for(Proc_no = 0;Proc_no < no;Proc_no++) 
 	{
@@ -28,8 +30,10 @@ main()
 	printf("The time quantum for first round is 3.\n"); 
 	time_quan=3;
 	CurT=0;
+
 	for(Proc_no=0;RemProc!=0;) 
 	{
+
 		if(remt[Proc_no]<=time_quan && remt[Proc_no]>0)
 		{ 
 			CurT+=remt[Proc_no]; 
